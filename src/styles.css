@@ -1,0 +1,79 @@
+html {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: black;
+}
+.app {
+  position: relative;
+}
+.board {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+.square {
+  border: solid 20px;
+}
+
+#red {
+  border-radius: 100% 0 0 0;
+  border-color: red;
+}
+
+#blue {
+  border-radius: 0 100% 0 0;
+  border-color: blue;
+}
+
+#orange {
+  border-color: orange;
+  border-radius: 0 0 0 100%;
+}
+
+#green {
+  border-color: green;
+  border-radius: 0 0 100% 0;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background: blue;
+}
+.orange {
+  background: orange;
+}
+.green {
+  background: green;
+}
+.control-button {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  left: 150px;
+  top: 150px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.control-button:focus {
+  outline: none;
+}
+
+.control-button:active {
+  background-color: #6e6e6e;
+  width: 197px;
+  height: 197px;
+}
